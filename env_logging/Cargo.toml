@@ -1,0 +1,18 @@
+[package]
+authors = ["Seong Hoon Wee <mrgravity817@gmail.com>"]
+edition = "2018"
+name = "rand_gen"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.32"
+dotenv = "0.13"
+hyper = "0.12"
+log = "0.4"
+pretty_env_logger = "0.2"
+rand = "0.5"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
