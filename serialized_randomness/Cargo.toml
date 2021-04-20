@@ -1,0 +1,20 @@
+[package]
+authors = ["Seong Hoon Wee <mrgravity817@gmail.com>"]
+edition = "2018"
+name = "serialized_randomness"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.13"
+base64-serde = "0.6"
+failure = "0.1"
+futures = "0.1"
+hyper = "0.12"
+queryst = "2.0"
+rand = "0.7"
+serde = "1.0"
+serde_cbor = "0.8"
+serde_derive = "1.0"
+serde_json = "1.0"
