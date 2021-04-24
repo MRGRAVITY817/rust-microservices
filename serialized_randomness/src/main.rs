@@ -110,7 +110,7 @@ fn color_range(from: u8, to: u8) -> Uniform<u8> {
 
 fn microservice_handler(
     req: Request<Body>,
-) -> Box<Future<Item = Response<Body>, Error = hyper::Error> + Send> {
+) -> Box<dyn Future<Item = Response<Body>, Error = hyper::Error> + Send> {
     match (req.method(), req.uri().path()) {
         (&Method::GET, "/") | (&Method::GET, "/random") => {
             Box::new(future::ok(Response::new(INDEX.into())))
